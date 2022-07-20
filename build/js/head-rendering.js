@@ -1,0 +1,1 @@
+const headRenderer=e=>{const t=document.querySelector("title"),n=document.querySelector('meta[name="keywords"]'),o=document.querySelector('meta[name="description"]');e.title&&(t.textContent=e.title),e.meta_keywords&&(n.content=e.meta_keywords),e.meta_description&&(o.content=e.meta_description)};export{headRenderer};

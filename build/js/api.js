@@ -1,0 +1,1 @@
+import{showAlert}from"./utils.js";const getData=t=>{fetch("dataset.json").then((t=>t.json())).then((e=>{t(e)})).catch((()=>showAlert("Не удалось получить данные.")))};export{getData};

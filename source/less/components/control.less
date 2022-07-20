@@ -1,0 +1,56 @@
+.control {
+  position: relative;
+  padding-left: 35px;
+
+  &:hover .control__mark {
+    border-color: #8dcde3;
+  }
+
+  &:active .control__mark,
+  &:focus-within .control__mark {
+    border-color: #d22856;
+  }
+}
+
+.control__mark {
+  background: #ffffff;
+  border: 1px solid #2d9cdb;
+  width: 16px;
+  height: 16px;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark {
+  background-image: url("../../img/checkbox.svg");
+  background-repeat: no-repeat;
+  background-color: #2d9cdb;
+  background-position: center;
+}
+
+.control__input[type="radio"] + .control__mark {
+  border-radius: 50%;
+}
+
+.control__input[type="radio"]:checked + .control__mark::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #2d9cdb;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.control__text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #4f4f4f;
+}

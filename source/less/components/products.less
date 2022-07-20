@@ -1,0 +1,137 @@
+.products {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+}
+
+.products__sort-wrapper {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products__pagination {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  
+  width: 500px;
+}
+
+.products__pagination-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  line-height: 19px;
+  display: block;
+  text-align: center;
+  padding-top: 8px;
+  box-sizing: border-box;
+  width: 35px;
+  height: 35px;
+
+  background-color: #ffffff;
+}
+
+.products__pagination-link--current {
+  background-color: #56ccf2;
+}
+
+.products__pagination-link.disabled {
+  color: #bdbdbd;
+}
+
+.products__options-text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.products__options-select {
+  width: 210px;
+  height: 35px;
+  border: 1px solid #bdbdbd;
+  padding: 0 10px;
+  color: #828282;
+}
+
+.products__list,
+.products__description-list, 
+.products__parameters-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.products__item {
+  background-color: #ffffff;
+  display: grid;
+  padding: 16px;
+  grid-template-columns: 224px auto 100px;
+  grid-template-rows: repeat(2, auto) 26px;
+  row-gap: 5px;
+  column-gap: 16px;
+  margin-bottom: 16px;
+  min-height: 200px;
+  box-sizing: border-box;
+}
+
+.products__image {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.products__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+
+  grid-column: 2 / 3;
+}
+
+.products__price {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #4f4f4f;
+}
+
+.products__description-list {
+  grid-column: 2 / 3;
+  min-height: 83px;
+}
+
+.products__description-item {
+  width: 180px;
+  font-weight: 300;
+  line-height: 16px;
+  color: #828282;
+  margin-right: 10px;
+  
+  display: inline-block;
+}
+
+.products__parameters-list {
+  grid-column: 2 / 3;
+  
+  display: flex;
+  gap: 16px;
+}
+
+.products__parameters-item {
+  background-color: #c4c4c4;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  
+  padding: 5px 10px;
+}

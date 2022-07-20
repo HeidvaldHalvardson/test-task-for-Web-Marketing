@@ -1,0 +1,1 @@
+const pageTextRender=e=>{const t=document.querySelector(".page-text");e.map((e=>{const n=document.createElement(e.tag);n.classList.add("page-text__item"),n.textContent=e.content,t.append(n)}))};export{pageTextRender};

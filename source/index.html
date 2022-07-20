@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords">
+  <meta name="description">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title></title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="logo page-header__wrapper" href="#">
+      <img class="logo__img" alt="logo" src="https://i.pinimg.com/originals/a9/c3/e9/a9c3e93d66701b20f56dfab408337913.jpg" width="50" height="30">
+      <span class="logo__title">Truck for sale</span>
+    </a>
+    <nav class="main-nav"></nav>
+  </header>
+  <main class="sticky-footer">
+    <header class="breadcrumbs"></header>
+    <div class="product-page">
+      <h1 class="product-page__title"></h1>
+      <form class="filter" action="#">
+        <p class="filter__results">26 Results Found</p>
+        <fieldset class="filter__checkbox">
+          <span class="filter__legend">Param 1</span>
+          <label class="filter__label control">
+            <input class="visually-hidden control__input" name="param-1" value="1" type="checkbox">
+            <span class="control__mark"></span>
+            <span class="control__text">value 1</span>
+          </label>
+          <label class="filter__label control">
+            <input class="visually-hidden control__input" name="param-1" value="2" type="checkbox">
+            <span class="control__mark"></span>
+            <span class="control__text">value 2</span>
+          </label>
+          <label class="filter__label control">
+            <input class="visually-hidden control__input" name="param-1" value="3" type="checkbox" checked>
+            <span class="control__mark"></span>
+            <span class="control__text">value 3</span>
+          </label>
+          <label class="filter__label control">
+            <input class="visually-hidden control__input" name="param-1" value="4" type="checkbox" checked>
+            <span class="control__mark"></span>
+            <span class="control__text">value 4</span>
+          </label>
+          <label class="filter__label control">
+            <input class="visually-hidden control__input" name="param-1" value="5" type="checkbox">
+            <span class="control__mark"></span>
+            <span class="control__text">value 5</span>
+          </label>
+        </fieldset>
+        <fieldset class="filter__radio">
+          <span class="filter__legend">Param 2</span>
+          <label class="filter__label control">
+            <input class="visually-hidden control__input" name="param-2" value="1" type="radio">
+            <span class="control__mark"></span>
+            <span class="control__text">value 2-1</span>
+          </label>
+          <label class="filter__label control">
+            <input class="visually-hidden control__input" name="param-2" value="2" type="radio">
+            <span class="control__mark"></span>
+            <span class="control__text">value 2-2</span>
+          </label>
+          <label class="filter__label control">
+            <input class="visually-hidden control__input" name="param-2" value="3" type="radio" checked>
+            <span class="control__mark"></span>
+            <span class="control__text">value 2-3</span>
+          </label>
+        </fieldset>
+        <fieldset class="filter__range">
+          <span class="filter__legend">Param 3</span>
+          <div class="filter__range-wrapper">
+            <label>
+              <span class="visually-hidden">min value</span>
+              <input class="filter__input filter__input--range" type="text" name="min" placeholder="min">
+            </label>
+            <label>
+              <span class="visually-hidden">max value</span>
+              <input class="filter__input filter__input--range" type="text" name="max" placeholder="max">
+            </label>
+          </div>  
+        </fieldset>
+        <fieldset class="filter__keywords">
+          <span class="filter__range">Param 4</span>
+          <input class="filter__input" type="text" name="keywords" placeholder="keywords">
+        </fieldset>
+        <button class="filter__button" type="submit">Search</button>
+      </form>
+      <section class="products">
+        <div class="products__sort-wrapper">
+          <ul class="products__pagination">
+            <li class="products__pagination-item">
+              <a class="products__pagination-link" href="#">
+                <span class="visually-hidden">Предыдушая страница</span>
+                <span class="products__pagination-left">&lt;</span>
+              </a>
+            </li>
+            <li class="products__pagination-item">
+              <a class="products__pagination-link current-pagination" href="#">1</a>
+            </li>
+            <li class="products__pagination-item">
+              <a class="products__pagination-link products__pagination-link--current" href="#">2</a>
+            </li>
+            <li class="products__pagination-item">
+              <a class="products__pagination-link products__pagination-link--right disabled" href="#">
+                <span class="visually-hidden">Следующая страница</span>
+                <span class="products__pagination-right">&gt;</span>
+              </a>
+            </li>
+          </ul>
+          <div class="products__options">
+            <span class="products__options-text">Sort by</span>
+            <select class="products__options-select">
+              <option class="products__options-item" value="no-sort">No sort</option>
+              <option class="products__options-item" value="price">Price</option>
+              <option class="products__options-item" value="mileage">Mileage</option>
+              <option class="products__options-item" value="year">Year</option>
+            </select>
+          </div>
+        </div>
+        
+        <ul class="products__list"></ul>
+
+        <div class="products__sort-wrapper">
+          <ul class="products__pagination">
+            <li class="products__pagination-item">
+              <a class="products__pagination-link" href="#">
+                <span class="visually-hidden">Предыдушая страница</span>
+                <span class="products__pagination-left">&lt;</span>
+              </a>
+            </li>
+            <li class="products__pagination-item">
+              <a class="products__pagination-link current-pagination" href="#">1</a>
+            </li>
+            <li class="products__pagination-item">
+              <a class="products__pagination-link products__pagination-link--current" href="#">2</a>
+            </li>
+            <li class="products__pagination-item">
+              <a class="products__pagination-link products__pagination-link--right disabled" href="#">
+                <span class="visually-hidden">Следующая страница</span>
+                <span class="products__pagination-right">&gt;</span>
+              </a>
+            </li>
+          </ul>
+          <div class="products__options">
+            <span class="products__options-text">Sort by</span>
+            <select class="products__options-select options-select-bottom">
+              <option class="products__options-item" value="no-sort">No sort</option>
+              <option class="products__options-item" value="price">Price</option>
+              <option class="products__options-item" value="mileage">Mileage</option>
+              <option class="products__options-item" value="year">Year</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <div class="page-text"></div>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <a class="logo" href="#">
+      <img class="logo__img" alt="logo" src="https://i.pinimg.com/originals/a9/c3/e9/a9c3e93d66701b20f56dfab408337913.jpg" width="50" height="30">
+      <span class="logo__title">Truck for sale</span>
+    </a>
+    <section class="contacts">
+      <address class="contacts__address">
+        Company Adress: Lorem ipsum dolor sit amet<br>18600, Netherlands
+      </address>
+      <a class="contacts__phone" href="tel:+38 958 755-00-00">+38 958 755-00-00</a>
+      <ul class="contacts__social-list">
+        <li class="contacts__social-item contacts__social-item--facebook">
+          <a class="contacts__social-link" href="#">
+            <span class="visually-hidden">Facebook</span>
+            <svg width="30" height="30" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#facebook-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="contacts__social-item contacts__social-item">
+          <a class="contacts__social-link" href="#">
+            <span class="visually-hidden">Instagram</span>
+            <svg width="30" height="30" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#instagram-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="contacts__social-item">
+          <a class="contacts__social-link" href="#">
+            <span class="visually-hidden">Twitter</span>
+            <svg width="30" height="30" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#twitter-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="contacts__social-item">
+          <a class="contacts__social-link" href="#">
+            <span class="visually-hidden">You-tube</span>
+            <svg width="30" height="30" aria-hidden="true" focusable="false">
+              <use href="img/sprite.svg#youtube-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section> 
+    <section class="about-us">
+      <p class="about-us__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quos ullam atque accusantium ratione molestias soluta, provident nobis, assumenda dolorum voluptas incidunt inventore quia reiciendis quis. Quis quo molestias repellat.</p>
+    </section>
+  </footer>
+  
+  <template id="card">
+    <li class="products__item">
+      <img class="products__image" src="" alt="product image" width="224" height="168">
+      <h2 class="products__title"></h2>
+      <p class="products__price"></p>
+      <ul class="products__description-list">
+        <li class="products__description-item">Make:
+          <span id="make"></span>
+        </li>
+        <li class="products__description-item">Model:
+          <span id="model"></span>
+        </li>
+        <li class="products__description-item">Type:
+          <span id="type"></span>
+        </li>
+        <li class="products__description-item">Power:
+          <span id="power"></span>
+        </li>
+        <li class="products__description-item">Payload:
+          <span id="payload"></span>
+        </li>
+        <li class="products__description-item">Gross Weight:
+          <span id="gross-weight"></span>
+        </li>
+      </ul>
+      <ul class="products__parameters-list">
+        <li class="products__parameters-item">
+          <span id="year"></span>
+        </li>
+        <li class="products__parameters-item">
+          <span id="mileage"></span>
+        </li>
+        <li class="products__parameters-item">
+          <span id="axle-config"></span>
+        </li>
+      </ul>
+    </li>
+  </template>
+  
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>

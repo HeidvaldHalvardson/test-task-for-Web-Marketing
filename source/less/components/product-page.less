@@ -1,0 +1,20 @@
+.product-page {
+  width: @desktop-width;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 270px auto 300px;
+  grid-template-rows: repeat(4, auto);
+  column-gap: 20px;
+  row-gap: 25px;
+}
+
+.product-page__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  
+  grid-column: 2 / -1;
+}
+

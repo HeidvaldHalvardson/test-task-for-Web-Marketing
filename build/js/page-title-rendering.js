@@ -1,0 +1,1 @@
+const pageTitleRenderer=e=>{document.querySelector(".product-page__title").textContent=e.h1};export{pageTitleRenderer};
